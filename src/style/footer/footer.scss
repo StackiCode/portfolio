@@ -1,0 +1,74 @@
+$width-footerback: calc(100vw - 10rem);
+$height-footerback: 22rem;
+
+.footer {
+    position: relative;
+}
+
+.footer-back {
+    display: grid;
+    grid-template: "a a a a" 1fr
+                   "b b c c" 2fr
+                   "d d d d" .5fr;
+    width: $width-footerback;
+    height: $height-footerback;
+    background: #374156;
+    margin-left: 5rem;
+}
+
+.footer-head {
+    padding: 3rem 0rem 0rem 2rem;
+    font-size: 3rem;
+    font-family: 'gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    grid-area: a;
+    line-height: 1.6rem;
+}
+
+.footer-copyright {
+    font-family: 'gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: d;
+    line-height: 1.6rem;
+}
+
+.footer-infor {
+    grid-area: c;
+    font-family: 'gabriola', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: white;
+    white-space: pre-wrap;
+    line-height: 1.6rem;
+}
+
+.social {
+    grid-area: b;
+    display: grid;
+    padding-left: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-cap {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.facebook {
+    background-image: url('./assets/facebook-logo.png');
+}
+
+.linkedin {
+    background-image: url('./assets/linkedin-logo.png');
+}
+
+.github {
+    background-image: url('./assets/github-logo.png');
+}

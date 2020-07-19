@@ -1,0 +1,51 @@
+$width: calc(100vw - 10rem);
+$height: calc(50vw - 5rem);
+
+.skills-back {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    width: $width;
+    height: $height;
+    background: 
+    linear-gradient(31.1deg, orange 49%, yellow 30%, yellow);
+    clip-path: polygon(100% 0, 50% 0, 0 60%, 0 100%, 100% 100%);
+}
+.skills {
+    position: relative;
+}
+.skill-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center   ;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.skill-label {
+    display: block;
+    font-size: 2rem;
+    font-family: 'gabriola';
+}
+.blue {
+    display: block;
+    width: 5rem;
+    height: 1rem;
+    background: blue;
+    margin-right: 1rem;
+    border: 2px solid black;
+}
+.white {
+    width: 5rem;
+    height: 1rem;
+    background: white;
+    margin-right: 1rem;
+    border: 2px solid black;
+}

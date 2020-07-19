@@ -1,0 +1,154 @@
+$width-frame: calc(100vw - 39.6rem);
+$height-frame: calc(0.64 * (100vw - 39.6rem));
+$width-pic: calc(100vw - 39.6rem - 0.5rem);
+$height-pic: calc(0.64 * (100vw - 39.6rem - 0.5rem));
+$width-projectback: calc(100vw - 10rem);
+$height-projectback: 50vw;
+.cls-1-1 {
+    fill: #ddd6ce;
+    stroke: #ddd6ce;
+    stroke-miterlimit: 10;
+    stroke-width: 3.02px;
+}
+.cls-2-1 {
+    fill: #634fa1;
+    stroke: #32bad9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 10.17px;
+}
+.cls-1-2 {
+    fill: #ddd6ce;
+    stroke: #ddd6ce;
+    stroke-miterlimit: 10;
+    stroke-width: 3.02px;
+    }
+.cls-2-2 {
+    fill: #634fa1;
+    stroke: #32bad9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 10.17px;
+}
+.btn-left {
+    position: absolute;
+    top:50%;
+    left: 7rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    z-index: 99;
+    &:hover,
+    &:active {
+        border: 2px solid black;
+    }
+    &:active {
+        transform: scale(0.8);
+    }
+}
+.btn-right {
+    position: absolute;
+    top:50%;
+    right: 7rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    z-index: 99;
+    &:hover,
+    &:active {
+        border: 2px solid black;
+    }
+    &:active {
+        transform: scale(0.8);
+    }
+}
+.project {
+    position: relative;
+}
+
+.project-back {
+    padding: 0;
+    width: $width-projectback;
+    height: $height-projectback;
+    background: orange;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.project-frame {
+    position: absolute;
+    width: $width-pic;
+    height: $height-pic;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+}
+
+.frame-container {
+    position: relative;
+    border: .5rem solid black;
+    top: 10rem;
+    margin-left: 19.8rem;
+    margin-right: 19.8rem;
+    width: $width-frame;
+    height: $height-frame;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+}
+
+.P1 {
+    background: no-repeat center/cover url('./assets/P1.png') !important;
+}
+
+.P2 {
+    background: no-repeat center/cover url('./assets/P2.png') !important;
+}
+
+.P3 {
+    background: no-repeat center/cover url('./assets/P3.png') !important;
+}
+
+.anm-cur-left {
+    animation: anm-cur-left .2s ease-in-out forwards;
+}
+
+.anm-cur-right {
+    animation: anm-cur-right .2s ease-in-out forwards;
+}
+
+.anm-nxt-left {
+    animation: anm-nxt-left .2s ease-in-out forwards;
+}
+
+.anm-nxt-right {
+    animation: anm-nxt-right .2s ease-in-out forwards;
+}
+
+@keyframes anm-cur-left {
+    from {
+        transform:  translateX(0);
+    } to {
+        transform:  translateX(-100%);
+    }
+}
+
+@keyframes anm-cur-right {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes anm-nxt-left {
+    from {
+        transform: translateX(100%);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes anm-nxt-right {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(0);
+    }
+}
