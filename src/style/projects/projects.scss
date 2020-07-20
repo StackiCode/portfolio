@@ -45,6 +45,26 @@ $height-projectback: 50vw;
     &:active {
         transform: scale(0.8);
     }
+    @include respond(phone) {
+        left: 1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    @include respond(tabletportrait) {
+        left: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    @include respond(tabletlandscape) {
+        left: 3rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    @include respond(laptop) {
+        left: 4rem;
+        width: 5rem;
+        height: 5rem;
+    }
 }
 .btn-right {
     position: absolute;
@@ -61,36 +81,144 @@ $height-projectback: 50vw;
     &:active {
         transform: scale(0.8);
     }
+    @include respond(phone) {
+        right: 1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    @include respond(tabletportrait) {
+        right: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    @include respond(tabletlandscape) {
+        right: 3rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    @include respond(laptop) {
+        right: 4rem;
+        width: 5rem;
+        height: 5rem;
+    }
 }
 .project {
     position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
 }
 
 .project-back {
-    padding: 0;
-    width: $width-projectback;
-    height: $height-projectback;
+    position: relative;
     background: orange;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    @include respond(phone) {
+        width: calc(100%);
+        height: 15rem;
+        padding-top: 5rem;
+        padding-left: 0rem;
+        margin-left: 0rem;
+    }
+    @include respond(tabletportrait) {
+        $width: calc(100% - 4rem);
+        width: $width;
+        height: 30rem;
+        padding-left: 0rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    @include respond(tabletlandscape) {
+        $width: calc(100% - 10rem);
+        width: $width;
+        height: 35rem;
+        padding-left: 0rem;
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }
+    @include respond(laptop) {
+        $width: calc(100% - 10rem);
+        width: $width;
+        height: 45rem;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }
 }
 
 .project-frame {
     position: absolute;
-    width: $width-pic;
-    height: $height-pic;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    @include respond(phone) {
+        $width: 100%;
+        $height: 100%;
+        width: $width;
+        height: $height;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    }
+    @include respond(tabletportrait) {
+        $width: 100%;
+        $height: 100%;
+        width: $width;
+        height: $height;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    }
+    @include respond(tabletlandscape) {
+        $width: 100%;
+        $height: 100%;
+        width: $width;
+        height: $height;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    }
+    @include respond(laptop) {
+        $width: 100%;
+        $height: 100%;
+        width: $width;
+        height: $height;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    }
 }
 
 .frame-container {
-    position: relative;
+    position: absolute;
     border: .5rem solid black;
     top: 10rem;
-    margin-left: 19.8rem;
-    margin-right: 19.8rem;
-    width: $width-frame;
-    height: $height-frame;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    @include respond(phone) {
+        top: 6rem;
+        $width: calc(100% - 10rem - 1rem);
+        $height: calc(100% - 6rem - 3rem);
+        left: 5rem;
+        width: $width;
+        height: $height;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    }
+    @include respond(tabletportrait) {
+        top: 6rem;
+        $width: calc(100% - 14rem - 1rem);
+        $height: calc(100% - 6rem - 6rem);
+        left: 7rem;
+        width: $width;
+        height: $height;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    }
+    @include respond(tabletlandscape) {
+        top: 7rem;
+        $width: calc(100% - 18rem - 1rem);
+        $height: calc(100% - 6rem - 6rem);
+        left: 9rem;
+        width: $width;
+        height: $height;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    }
+    @include respond(laptop) {
+        $width: calc(100% - 20rem - 1rem);
+        $height: calc(100% - 6rem - 6rem);
+        left: 10rem;
+        width: $width;
+        height: $height;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 18.75%);
+    }
 }
 
 .P1 {

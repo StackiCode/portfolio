@@ -5,7 +5,8 @@ class Footer extends Component {
         let contactinfor = `
         Gmail: stacki.code@gmail.com \n
         or nguyenquocbaobku@gmail.com \n
-        Linkedin: https://www.linkedin.com/in/baon-profile/ \n
+        Linkedin:
+        https://www.linkedin.com/in/baon-profile/\n
         Mobile: +84835020777
         `
         return (
@@ -15,9 +16,11 @@ class Footer extends Component {
                     CONTACT INFOMATION
                     </div>
                     <Social/>
-                    <div className="footer-infor">{contactinfor}</div>
+                    <div className="footer-infor">
+                    <p> {contactinfor}</p>   
+                    </div>
                     <div className="footer-copyright">
-                    © Copyright  2020 Alex Nguyen. All right  reserved
+                     Copyright © 2020 Alex Nguyen. All right  reserved
                     </div>
                 </div>
             </div>

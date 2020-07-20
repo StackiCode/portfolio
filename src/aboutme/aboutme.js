@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 
 class Aboutme extends Component {
     render() {
-        let message = `\n
+        let message = `
             Hi, welcome to my portfolio! \n
-            My name is Bao Nguyen and i am \n
-            tech| web based application enthusiast. \n
-            You can scroll down and find out more about my personality \n 
-            as well as stuffs i am working on.`;
+            My name is Bao Nguyen and i am tech| web based application enthusiast. \n
+            You can scroll down and find out more about my personality as well as \n 
+            stuffs i am working on.`;
         // const messageline = message.split('\n').map((text, index) => 
         //     <React.Fragment>
         //         {text}<br/>
@@ -16,7 +15,7 @@ class Aboutme extends Component {
         return ( 
             <div className="container">
             <div className="txt-container">
-                {message}
+                <p>{message}</p>
             </div>
             <div className="dot">
             <div className="self-img"></div>
