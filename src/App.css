@@ -6,6 +6,10 @@
 1800px + : desktop
 
 */
+html {
+  scroll-behavior: smooth;
+}
+
 .cls-1,
 .cls-4,
 .cls-5 {
@@ -285,6 +289,14 @@
   margin-left: 5rem;
   cursor: pointer;
   z-index: 100;
+}
+.navitem a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-transform: none;
 }
 @media (max-width: 37.5rem) {
   .navitem {

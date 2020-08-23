@@ -13,7 +13,7 @@ class Aboutme extends Component {
         //     </React.Fragment>
         // )
         return ( 
-            <div className="container">
+            <div className="container" id={this.props.id}>
             <div className="txt-container">
                 <p>{message}</p>
             </div>

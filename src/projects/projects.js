@@ -66,7 +66,7 @@ class Projects extends Component {
     }
     render() {
         return (
-            <div className="project">
+            <div className="project" id={this.props.id}>
                     <Headlabel>PROJECTS</Headlabel>
                 <div className="project-back">
                     <Btnleft click={() => this.changeProjectHandler(1)}/>

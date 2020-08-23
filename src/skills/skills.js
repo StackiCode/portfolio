@@ -5,7 +5,7 @@ import Skill from '../components/skill/skill';
 class Skills extends Component {
     render() {
         return (
-            <div className="skills">
+            <div className="skills" id={this.props.id}>
                 <Headlabel>SKILLS</Headlabel>
                 <div className="skills-back">
                     <Skill label="HTML"/>

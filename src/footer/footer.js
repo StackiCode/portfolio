@@ -10,7 +10,7 @@ class Footer extends Component {
         Mobile: +84835020777
         `
         return (
-            <div className="footer">
+            <div className="footer" id={this.props.id}>
                 <div className="footer-back">
                     <div className="footer-head">
                     CONTACT INFOMATION
