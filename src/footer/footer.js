@@ -20,7 +20,7 @@ class Footer extends Component {
                     <p> {contactinfor}</p>   
                     </div>
                     <div className="footer-copyright">
-                     Copyright © 2020 Alex Nguyen. All right  reserved
+                     Copyright © 2020 Bao Nguyen. All right  reserved
                     </div>
                 </div>
             </div>
