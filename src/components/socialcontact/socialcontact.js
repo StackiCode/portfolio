@@ -4,12 +4,15 @@ const socialcontact = (props) => {
     let imgfacebook = `img-cap facebook`;
     let imglinkedin = `img-cap linkedin`;
     let imggithub = `img-cap github`;
-
+    let linkFacebook = `https://www.facebook.com/Bao.Nguyen.Quoc.45/`;
+    let linkLinkedin = `https://www.linkedin.com/in/baon-profile/`;
+    let linkGithub = `https://github.com/StackiCode`;
+    let newPage = `_blank`;
     return (
         <div className="social">
-                <div className={imgfacebook}></div>
-                <div className={imglinkedin}></div>
-                <div className={imggithub}></div>
+                <a className={imgfacebook} href={linkFacebook} target={newPage}></a>
+                <a className={imglinkedin} href={linkLinkedin} target={newPage}></a>
+                <a className={imggithub} href={linkGithub} target={newPage}></a>
         </div>
     )
 }
