@@ -5,8 +5,8 @@ class Aboutme extends Component {
         let message = `
             Hi, welcome to my portfolio! \n
             My name is Bao Nguyen and i am tech| web based application enthusiast. \n
-            You can scroll down and find out more about my personality as well as \n 
-            stuffs i am working on.`;
+            You can scroll down and find out more about stuffs i am working on. \n 
+            `;
         // const messageline = message.split('\n').map((text, index) => 
         //     <React.Fragment>
         //         {text}<br/>
