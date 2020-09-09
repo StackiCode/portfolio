@@ -7,7 +7,7 @@ class Footer extends Component {
         or nguyenquocbaobku@gmail.com \n
         Linkedin:
         https://www.linkedin.com/in/baon-profile/\n
-        Mobile: +84835020777
+        Mobile: +1(669)2385174
         `
         return (
             <div className="footer" id={this.props.id}>
