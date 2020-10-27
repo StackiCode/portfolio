@@ -8,10 +8,10 @@ class Skills extends Component {
             <div className="skills" id={this.props.id}>
                 <Headlabel>SKILLS</Headlabel>
                 <div className="skills-back">
-                    <Skill label="HTML"/>
-                    <Skill label="CSS/SCSS"/>                    
-                    <Skill label="ReactJS"/>                    
-                    <Skill label="Adobe Illustrator CC"/>                    
+                    <Skill label="HTML,CSS/SCSS"/>
+                    <Skill label="Javascript"/>                    
+                    <Skill label="Java"/>                    
+                    <Skill label="Python,C++"/>                    
                 </div>
             </div>
         )

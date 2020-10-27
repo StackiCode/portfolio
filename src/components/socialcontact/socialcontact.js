@@ -10,7 +10,7 @@ const socialcontact = (props) => {
     let newPage = `_blank`;
     return (
         <div className="social">
-                <a className={imgfacebook} href={linkFacebook} target={newPage}></a>
+                <a className={imgfacebook} target={newPage}></a>
                 <a className={imglinkedin} href={linkLinkedin} target={newPage}></a>
                 <a className={imggithub} href={linkGithub} target={newPage}></a>
         </div>

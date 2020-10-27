@@ -4,16 +4,16 @@ import Level from './level';
 const Skill = (props) => {
     let skillvalue = 0;
     switch (props.label) {
-        case ('HTML'):
+        case ('HTML,CSS/SCSS'):
             skillvalue = 4;
         break;
-        case ('CSS/SCSS'):
-            skillvalue = 4;
-        break;
-        case ('ReactJS'):
+        case ('Javascript'):
             skillvalue = 3;
         break;
-        case ('Adobe Illustrator CC'):
+        case ('Java'):
+            skillvalue = 4;
+        break;
+        case ('Python,C++'):
             skillvalue = 4;
         break;
     }
